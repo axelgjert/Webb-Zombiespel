@@ -1,5 +1,6 @@
 Hej och välkommen till min version på Zombiespelet. Istället för zombies har jag en egen bild på en katt som jagar en röd prick som då skulle vara en laser.
-Min meny är då start sidan 'index.html' där du kan trycka på en knapp för att starta spelet.
+Min meny är då start sidan 'index.html' där du kan trycka på en knapp för att starta spelet. Jag använde mig utav en lätt version på min flexbox hemsida för att spara tid på det.
 När du har förlorat eller vunnit och tryckt på 'ok' så kan du trycka på knappen "E" för att starta om spelet.
 Jag höll på att göra så man faktiskt kunde vinna också men tomten på tutorialen la aldrig med det och jag fastnade på det såpass länge så jag skippade det.
 Jag försökte med lite olika saker men lyckades inte.
+
