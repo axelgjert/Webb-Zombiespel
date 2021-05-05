@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script src="http://koda.nu/simple.js">
+    
+     var cats = [];
+    
+    var i = 0;
+    
+    while (i < 50)
+    {
+      {
+        text(50, 40, 30, "blue", "hej")
+      }
+      cats.push({x: random(totalWidth),
+                   y: random(totalHeight),
+                   speed: random(1,10)});
+   
+      i += 1;
+    }  
+    
+    function update()
+    {
+      clearScreen();
+
+      fill("black")
+       text(50, 40, 30, "Zobmiespel Axel Gjertsson", "blue")
+      //Hur man styr lasern
+      circle(mouse.x, mouse.y, 20, "red");
+      
+      var i = 0;
+      
+      while (i < 50)
+      {
+        var cat = cats[i];
+        
+        picture(cat.x, cat.y, "https://toppng.com/public/uploads/thumbnail/rumpy-cat-vector-illustration-grumpy-cat-evil-cat-meme-11563070112yfboqj08vr.png");
+    
+        if (cat.x < mouse.x)
+          cat.x += cat.speed;
+        else
+          cat.x -= cat.speed;
+      
+        if (cat.y < mouse.y)
+          cat.y += cat.speed;
+        else
+          cat.y -= cat.speed;
+          
+    //Hur katten vinner
+        if (distance(mouse, cat) < 1)
+        {
+          alert("Gamover! Du blev uppäten.");
+          stopUpdate();
+        }
+
+        i += 1;
+      }
+      
+    }  
+//Lägger till funktion på knappen 'E' som i java bibbloteket är '69'
+    document.addEventListener('keyup', function(e){ 
+  if(e.keyCode == 69)
+    window.location.reload();
+}) 
+  
+  </script>
+        </body>
+    </head>
+</html>
+
